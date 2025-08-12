@@ -31,7 +31,8 @@ curl -O https://bootstrap.pypa.io/get-pip.py
 /c/Users/venka/Downloads/dharani_projects/mallepu/pythony/python-3.11.9-embed-amd64/python.exe -m virtualenv venvpython
 
 # 9. Activate the virtual environment (Git Bash)
-/bin/bash -c "source venvpython/Scripts/activate"
+cd ~/Downloads/dharani_projects/mallepu/pythony/python-3.11.9-embed-amd64/
+source venvpython/Scripts/activate
 
 # 10. Verify pip inside the venv
 pip --version
