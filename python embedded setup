@@ -1,0 +1,50 @@
+# 0. Go to your working folder (adjust path as needed)
+cd ~/Downloads/dharani_projects
+
+# 1. Unzip embedded Python (if not done)
+unzip python-3.11.9-embed-amd64.zip -d mallepu/pythony/python-3.11.9-embed-amd64
+
+# 2. Edit python311._pth manually:
+#    Open:
+#    mallepu/pythony/python-3.11.9-embed-amd64/python311._pth
+#    Remove the leading '#' from the line '#import site'
+#    so it reads:
+#    import site
+#    Save and close the file.
+
+# 3. Create site-packages folder (pip needs this)
+mkdir -p /c/Users/venka/Downloads/dharani_projects/mallepu/pythony/python-3.11.9-embed-amd64/Lib/site-packages
+
+# 4. Download get-pip.py
+curl -O https://bootstrap.pypa.io/get-pip.py
+
+# 5. Install pip with embedded python
+/c/Users/venka/Downloads/dharani_projects/mallepu/pythony/python-3.11.9-embed-amd64/python.exe get-pip.py
+
+# 6. Check pip installed
+/c/Users/venka/Downloads/dharani_projects/mallepu/pythony/python-3.11.9-embed-amd64/python.exe -m pip --version
+
+# 7. Install virtualenv into embedded python
+/c/Users/venka/Downloads/dharani_projects/mallepu/pythony/python-3.11.9-embed-amd64/python.exe -m pip install virtualenv
+
+# 8. Create a virtual environment named 'venvpython'
+/c/Users/venka/Downloads/dharani_projects/mallepu/pythony/python-3.11.9-embed-amd64/python.exe -m virtualenv venvpython
+
+# 9. Activate the virtual environment (Git Bash)
+/bin/bash -c "source venvpython/Scripts/activate"
+
+# 10. Verify pip inside the venv
+pip --version
+
+# 11. Now you can install packages inside venv like:
+pip install requests flask
+
+
+
+If you want a shortcut for step 9 inside Git Bash, just run:
+
+bash
+Copy
+Edit
+source venvpython/Scripts/activate
+after you cd into your project folder.
