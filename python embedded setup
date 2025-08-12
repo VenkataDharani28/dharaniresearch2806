@@ -49,3 +49,94 @@ Copy
 Edit
 source venvpython/Scripts/activate
 after you cd into your project folder.
+
+
+
+But in Jupyter kernel, it still shows 3.13 because:
+Your Jupyter Notebook/Lab is using a different Python kernel, not the one from your activated venvpython.
+
+To fix this and use your 3.11 virtualenv in Jupyter kernels:
+Activate your venvpython env in a terminal:
+
+bash
+Copy
+Edit
+source /c/Users/venka/Downloads/dharani_projects/mallepu/pythony/python-3.11.9-embed-amd64/venvpython/Scripts/activate
+Install ipykernel inside the venv if not installed:
+
+bash
+Copy
+Edit
+pip install ipykernel
+Register your venv as a Jupyter kernel:
+
+bash
+Copy
+Edit
+python -m ipykernel install --user --name=venvpython --display-name "Python 3.11 (venvpython)"
+Restart VS Code / Jupyter Notebook
+
+In the notebook, select kernel:
+
+Click the kernel selector (top right)
+
+Choose "Python 3.11 (venvpython)"
+
+Verify in notebook:
+Run in a cell:
+
+python
+Copy
+Edit
+import sys
+print(sys.version)
+It should output Python 3.11.x from your venv.
+
+If your venv kernel does not appear:
+
+Restart Jupyter server and VS Code
+
+Check jupyter kernelspec list to confirm your venv is registered
+
+Make sure you are not connected to a remote Jupyter server which might not have this kernel
+
+Let me know if you want help with any of these steps!
+
+
+
+
+
+######################################################################################################################################
+
+
+You said:
+a->ipython>=7.23.1->ipykernel) (0.2.3)
+
+[notice] A new release of pip is available: 25.1.1 -> 25.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(venvpython) 
+venka@DHARANI MINGW64 ~/Downloads/dharani_projects
+$ python -m ipykernel install --user --name=venvpython --display-name "Python 3.11 (venvpython)"
+Installed kernelspec venvpython in C:\Users\venka\AppData\Roaming\jupyter\kernels\venvpython
+(venvpython) 
+
+
+ChatGPT said:
+Perfect! You’ve successfully registered your venvpython virtual environment as a Jupyter kernel.
+
+Next steps:
+Restart your Jupyter Notebook or VS Code.
+
+When you open a notebook, select the kernel named:
+
+scss
+Copy
+Edit
+Python 3.11 (venvpython)
+Run this in a notebook cell to verify:
+
+python
+Copy
+Edit
+import sys
+print(sys.version)
