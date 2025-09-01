@@ -140,3 +140,5 @@ Copy
 Edit
 import sys
 print(sys.version)
+/c/Users/venka/Downloads/dharani_projects/python-3.11.9-embed-amd64/python.exe -m pip download pandas==2.2.2 -d .
+/c/Users/venka/Downloads/dharani_projects/python-3.11.9-embed-amd64/python.exe -m pip install pandas-2.2.2-cp311-cp311-win_amd64.whl
