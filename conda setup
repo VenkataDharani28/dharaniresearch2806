@@ -1,0 +1,7 @@
+nano ~/.bashrc
+# Add Anaconda paths
+export PATH="/c/Users/venka/Downloads/dharani_projects/anaconda3/condabin:$PATH"
+export PATH="/c/Users/venka/Downloads/dharani_projects/anaconda3/Scripts:$PATH"
+export PATH="/c/Users/venka/Downloads/dharani_projects/anaconda3:$PATH"
+source ~/.bashrc
+conda --version
