@@ -1,0 +1,21 @@
+import pandas as pd
+import os
+
+# Path to your pickle file
+df_pickle_file = "df_sample.pkl"
+
+# Check if the file exists
+if not os.path.exists(df_pickle_file):
+    raise FileNotFoundError(f"{df_pickle_file} not found in {os.getcwd()}")
+
+# Load the DataFrame
+df = pd.read_pickle(df_pickle_file)
+print("Data loaded successfully:")
+print(df)
+
+# Generate a version file alongside the pickle
+version_file = "df_sample.pkl.version"
+with open(version_file, "w") as f:
+    f.write(pd.__version__)
+
+print(f"Version file created: {version_file} with pandas version {pd.__version__}")
