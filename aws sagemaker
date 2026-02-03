@@ -1,1 +1,140 @@
+Amazon SageMaker is a fully managed AWS service for building, training, and deploying machine-learning models—end to end—without having to manage servers yourself.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+What SageMaker helps you do
+
+Prepare data – clean, label, and transform data
+Build models – using Python, Jupyter notebooks, TensorFlow, PyTorch, XGBoost, scikit-learn, etc.
+Train models – on scalable CPUs/GPUs with just a few clicks or lines of code
+Tune models – automatic hyperparameter tuning
+Deploy models – real-time endpoints or batch inference
+Monitor models – detect data drift and performance issues
+Automate ML workflows – pipelines, CI/CD for ML (MLOps)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Key SageMaker components (simple terms)
+
+SageMaker Studio: Web-based IDE for ML (Jupyter + tools)
+Notebooks: Write and run ML code
+Training Jobs: Train models on large datasets
+Endpoints: Deploy models as APIs
+Pipelines: Automate ML workflows
+Model Registry: Version and manage models
+Feature Store: Store and reuse ML features
+Ground Truth: Data labeling service
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Who uses SageMaker?
+
+Data Scientists → model development & experimentation
+ML Engineers / MLOps Engineers → deployment, automation, monitoring
+Data Engineers → data pipelines for ML
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Why companies use SageMaker
+
+No infrastructure management
+Scales automatically
+Secure and integrated with AWS (S3, IAM, CloudWatch, Snowflake, etc.)
+Faster model development → production
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Project: Insurance Claim Fraud Detection using Amazon SageMaker
+
+#Business Problem
+Insurance companies lose money due to fraudulent claims.
+Goal: Predict whether a claim is fraudulent before approval.
+
+#Architecture (High Level)
+Data Source (Snowflake / S3)
+        ↓
+Data Preprocessing (SageMaker Processing)
+        ↓
+Feature Engineering (Feature Store)
+        ↓
+Model Training (XGBoost in SageMaker)
+        ↓
+Model Evaluation
+        ↓
+Model Registry
+        ↓
+Deployment (Real-time Endpoint)
+        ↓
+Monitoring (Data Drift & Performance)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Step-by-Step Implementation
+
+#Data Ingestion
+Historical claim data stored in Snowflake
+Pulled data using Python + Snowflake connector
+Stored cleaned data in Amazon S3
+
+#Features include:
+Claim amount
+Policy age
+Vehicle age
+Claim type
+Accident location
+Previous claims count
+
+#Data Preprocessing
+Used SageMaker Processing Jobs:
+Handle missing values
+Encode categorical variables
+Scale numeric features
+Split data (train / validation / test)
+💡 Output written back to S3
+
+#Feature Engineering
+Created reusable features like:
+Claim-to-policy ratio
+Claims frequency per customer
+Stored features in SageMaker Feature Store
+Ensured training and inference consistency
+
+#Model Training
+Algorithm: XGBoost
+Used built-in SageMaker XGBoost container
+Enabled automatic hyperparameter tuning
+Trained on scalable EC2 instances (CPU/GPU)
+
+#Metrics:
+AUC
+Precision
+Recall
+F1-score
+
+#Model Evaluation
+Evaluated model using test data
+Compared baseline vs tuned models
+Best model selected automatically
+
+#Model Registry
+Registered approved model in SageMaker Model Registry
+Versioned models with metadata
+Enabled manual approval workflow
+
+#Deployment
+Deployed model as a real-time inference endpoint
+Exposed REST API for claim scoring
+Integrated with internal claim processing system
+⏱️ Response time: < 100 ms per request
+
+#Monitoring & MLOps
+Enabled SageMaker Model Monitor
+Tracked:
+  Data drift
+  Prediction quality
+Logs sent to CloudWatch
+Retraining triggered using SageMaker Pipelines + CI/CD
+
+#Tech Stack
+AWS SageMaker
+Python
+XGBoost
+Snowflake
+Amazon S3
+CloudWatch
+IAM
+CI/CD (Git + Pipelines)
 
