@@ -1,0 +1,35 @@
+Programming & Software Engineering: Python (Advanced), Git/GitLab, CI/CD, clean coding,
+testing, debugging, API development (Fast API, Flask, Django, REST, gRPC).
+• Machine Learning & AI: End-to-end ML lifecycle, model training & deployment, ML algorithms, AI
+Agents & Chatbots (Lang Chain, Rasa), model diagnostics & optimization.
+• MLOps & Data Engineering: MLflow, Kubeflow, DVC, W&B, Airflow, Prefect, PySpark/Spark,
+Pandas, Jenkins/GitLab CI/CD, Docker, Kubernetes, TensorFlow Serving.
+• Cloud & Infrastructure: AWS/GCP/Azure, Docker, Kubernetes, Helm, Terraform, Ansible,
+monitoring & logging (Prometheus, Grafana, ELK/EFK).
+
+Area of Exposure:
+1. Candidate with 3+ years across DevOps, MLOps, Machine Learning, and Data Engineering roles
+with strong exposure to production-grade systems.
+2. Incumbent must be skilled in Python, Git/GitLab, debugging, testing (unit/integration), and
+applying clean coding practices to build scalable solutions.
+3. Hands-on with the complete Machine Learning lifecycle — data preparation, model
+development, deployment, monitoring — with solid understanding of ML algorithms and
+dependencies.
+4. Experienced in designing and implementing MLOps Expertise architectures using MLflow,
+Kubeflow, Airflow, PySpark, and related frameworks for reproducibility and automation.
+5. Built and deployed AI Agents and conversational Chatbots leveraging modern frameworks and
+architectures.
+6. Proficient in diagnosing, deployment & Optimization and resolving issues around model
+performance, scalability, and deployment in production environments.
+7. Familiar with AWS/GCP/Azure, containerization (Docker, Kubernetes), CI/CD, and infrastructure
+automation.
+8. Strong communicator and team player with an experimental, iterative approach — driving best
+practices and cross-functional collaboration.
+Additional Skills:
+1. Proficiency with observability and monitoring tools: Prometheus, Grafana, Kibana, and
+Elasticsearch (ELK/EFK stack).
+2. Experience with platform engineering and Kubernetes (K8s), Helm, and ArgoCD.
+3. Knowledge of Apache Kafka or other streaming frameworks.
+4. Exposure to frontend technologies and Java development.
+5. Experience with feature stores for ML workflows.
+6. Familiarity with GPU setup and management for accelerated deep learning workloads.
