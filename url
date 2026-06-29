@@ -1,6 +1,7 @@
 Let's reproduce GPT-2 (1.6B): one 8XH100 node, 24 hours, $672, in llm.c #677
 https://huggingface.co/spaces/HuggingFaceFW/blogpost-fineweb-v1
 https://github.com/karpathy/llm.c/discussions/677
+https://youtu.be/7xTGNNLPyMI?si=acsM90ttzdaY088V
 
 ChatGPT https://chatgpt.com/
 FineWeb (pretraining dataset): https://huggingface.co/spaces/Hugging...
