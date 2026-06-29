@@ -1,0 +1,25 @@
+Let's reproduce GPT-2 (1.6B): one 8XH100 node, 24 hours, $672, in llm.c #677
+https://huggingface.co/spaces/HuggingFaceFW/blogpost-fineweb-v1
+https://github.com/karpathy/llm.c/discussions/677
+
+ChatGPT https://chatgpt.com/
+FineWeb (pretraining dataset): https://huggingface.co/spaces/Hugging...
+Tiktokenizer: https://tiktokenizer.vercel.app/
+Transformer Neural Net 3D visualizer: https://bbycroft.net/llm
+llm.c Let's Reproduce GPT-2 https://github.com/karpathy/llm.c/dis...
+Llama 3 paper from Meta: https://arxiv.org/abs/2407.21783
+Hyperbolic, for inference of base model: https://app.hyperbolic.xyz/
+InstructGPT paper on SFT: https://arxiv.org/abs/2203.02155
+HuggingFace inference playground: https://huggingface.co/spaces/hugging...
+DeepSeek-R1 paper: https://arxiv.org/abs/2501.12948
+TogetherAI Playground for open model inference: https://api.together.xyz/playground
+AlphaGo paper (PDF): https://discovery.ucl.ac.uk/id/eprint...
+AlphaGo Move 37 video:    • Video  
+LM Arena for model rankings: https://lmarena.ai/
+AI News Newsletter: https://buttondown.com/ainews
+LMStudio for local inference https://lmstudio.ai/
+
+The visualization UI I was using in the video: https://excalidraw.com/
+The specific file of Excalidraw we built up: https://drive.google.com/file/d/1EZh5...
+Discord channel for Eureka Labs and this video:   / discord  
+
